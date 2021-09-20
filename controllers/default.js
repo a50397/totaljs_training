@@ -13,6 +13,9 @@ function test_route() {
 		cities: ['Zurich', 'Athens', 'Banska Bystrica']
 	}
 
-	self.view('test', model);
-	
+	// EXEC('#Users --> update', {data: 'data'}, function(err, res) {
+
+	// })
+
+	self.view('test', model);	
 }
