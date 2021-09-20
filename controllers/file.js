@@ -11,7 +11,8 @@ function get_file(req, res) {
 
 function save_file() {
     var self = this;
-    var output = []
+    var output = [];
+    self.audit('Saving file')
     self.files.wait(
         function(file, next) {
             var obj = {};
