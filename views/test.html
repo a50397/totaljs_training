@@ -1,0 +1,28 @@
+Welcome @{repository.name}
+
+@{if !repository.c}
+    @{repository.c='not set'}
+@{fi}
+
+is set now @{repository.c}
+
+<ul>
+    @{foreach m in model.cities}
+        <li>@{index} , @{m}</li>
+    @{end}
+</ul>
+
+<div>
+    @{sum(10, 20)}
+    @{if helpers.sum(10,20) == 30}
+        works
+    @{fi}
+</div>
+
+<div>
+    <ul>
+        @{foreach m in {name: "Peter", age: 32}}
+            <li>@{m.key}, @{m.value}</li>
+        @{end}
+    </ul>
+</div>
